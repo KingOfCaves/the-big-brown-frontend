@@ -1,0 +1,12 @@
+{
+  "name": "the-big-brown-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for a restaurant's website. This is just the design / interactivity / idea.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
