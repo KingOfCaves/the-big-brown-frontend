@@ -4,7 +4,11 @@
   "description": "Frontend for a restaurant's website. This is just the design / interactivity / idea.",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./app/*.html --open --port 8080 --no-source-maps"
+    "clean": "rimraf ./dist/*",
+    "package": "parcel ./app/*.html --open --port 8080 --no-source-maps",
+    "images": "imagemin ./app/images/* --out-dir=dist/images",
+    "fonts": "copyfiles -u 1 ./app/fonts/* ./dist",
+    "post": "npm run clean && npm-run-all --parallel images fonts package"
   },
   "keywords": [],
   "author": "",
@@ -12,10 +16,11 @@
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
+    "copyfiles": "^2.1.1",
     "imagemin": "^7.0.0",
+    "imagemin-cli": "^5.0.0",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.3",
-    "parcel-plugin-clean-dist": "0.0.6",
     "posthtml-beautify": "^0.2.6",
     "posthtml-include": "^1.2.0",
     "sass": "^1.22.3"
