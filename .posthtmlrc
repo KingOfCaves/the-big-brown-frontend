@@ -1,0 +1,11 @@
+{
+	"plugins": {
+		"posthtml-include": {},
+		"posthtml-beautify": {
+			rules: {
+				indent: 4,
+				blankLines: false
+			}
+		}
+	}
+}
