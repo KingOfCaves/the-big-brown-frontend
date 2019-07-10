@@ -4,7 +4,8 @@
   "description": "Frontend for a restaurant's website. This is just the design / interactivity / idea.",
   "main": "index.js",
   "scripts": {
-    "pack": "webpack --config webpack.config.js"
+    "pack": "webpack --config webpack.config.js",
+    "clean": "rimraf dist/**/*"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +24,6 @@
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
-  }
+  },
+  "dependencies": {}
 }

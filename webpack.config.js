@@ -35,14 +35,14 @@ module.exports = {
 			}
 		]
 	},
-	puglins: [
+	plugins: [
 		new MiniCssExtractPlugin({
 			filename: 'bundle.css'
 		})
 	],
 	mode: 'development',
-	// devServer: {
-	// 	contentBase: path.join(__dirname, 'dist'),
-	// 	port: 9000
-	// }
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		port: 9000
+	}
 }
