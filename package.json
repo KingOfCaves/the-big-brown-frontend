@@ -30,8 +30,7 @@
 		"clean": "rimraf ./dist/*",
 		"package": "parcel ./app/*.html --open --port 8080 --no-source-maps",
 		"images": "imagemin ./app/images/* --out-dir=dist/images",
-		"fonts": "copyfiles -u 1 ./app/fonts/* ./dist",
-		"post": "npm run clean && npm-run-all --parallel images fonts package"
+		"post": "npm run clean && npm-run-all --parallel images package"
 	},
 	"keywords": [],
 	"author": "",

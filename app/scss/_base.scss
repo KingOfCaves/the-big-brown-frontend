@@ -8,11 +8,13 @@ html {
 }
 
 body {
-	font-family: '';
+	font-family: 'Quattrocento', serif;
 }
 
 .wrapper {
-	height: 100rem;
-	width: auto;
+	height: auto;
+	max-width: 128rem;
 	margin: auto;
+
+	background-color: #999;
 }
