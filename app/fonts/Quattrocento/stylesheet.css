@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('Quattrocento-Bold.woff2') format('woff2'),
+        url('Quattrocento-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('Quattrocento.woff2') format('woff2'),
+        url('Quattrocento.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Black Jack Script';
+    src: url('BlackJackScript.woff2') format('woff2'),
+        url('BlackJackScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
