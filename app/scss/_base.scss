@@ -9,6 +9,9 @@ html {
 
 body {
 	font-family: 'Quattrocento', serif;
+	font-size: 3.2rem;
+	background-color: #101010;
+	color: #efefef;
 }
 
 .wrapper {
@@ -16,5 +19,9 @@ body {
 	max-width: 128rem;
 	margin: auto;
 
-	background-color: #999;
+}
+
+*:link, *:visited{
+	color: currentColor;
+	text-decoration: none;
 }

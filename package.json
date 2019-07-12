@@ -28,7 +28,7 @@
 	],
 	"scripts": {
 		"clean": "rimraf ./dist/*",
-		"package": "parcel ./app/*.html --open --port 8080 --no-source-maps",
+		"package": "parcel ./app/index.html --open --port 8080 --no-source-maps",
 		"images": "imagemin ./app/images/* --out-dir=dist/images",
 		"post": "npm run clean && npm-run-all --parallel images package"
 	},
