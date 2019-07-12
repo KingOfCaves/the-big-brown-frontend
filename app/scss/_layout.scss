@@ -4,7 +4,7 @@
 	align-items: center;
 	font-family: "Black Jack Script";
 
-	& *:first-child{
+	& > :first-child{
 		margin-right: auto;
 	}
 }
