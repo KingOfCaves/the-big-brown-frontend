@@ -12,6 +12,8 @@
 .brand {
 	display: flex;
 	font-size: 6.4rem;
+	justify-content: center;
+	align-items: center;
 	
 	&__text {
 		display: flex;
@@ -23,9 +25,13 @@
 		font-size: .5em;
 	}
 	&__img {
-		height: 10rem;
-		width: 10rem;
-		background-color: white;
+		position: relative;
+		height: 16rem;
+		width: 16rem;
+		overflow: hidden;
+		
+		background-image: url(../images/brown-cow.svg);
+		border-left: solid 8px #efefef;
 	}
 }
 
