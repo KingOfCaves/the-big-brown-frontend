@@ -2,8 +2,10 @@ html#index .header {
 	position: absolute;
 
 	&::after {
+		height: 150%;
+		top: 0;
 		background: linear-gradient(
-			#101010bc,
+			#101010be,
 			transparent
 		);
 	}
@@ -22,8 +24,6 @@ html#index .header {
 	
 	&::after {
 		@include extendedbg;
-		top: 0;
-		height: 125%;
 	}
 
 	& > :first-child{
@@ -75,7 +75,7 @@ html#index .header {
 .navbar {
 	display: flex;
 	text-transform: uppercase;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: bold;
 	font-family: "Quattrocento", sans-serif;
 
@@ -101,7 +101,6 @@ html#index .header {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	font-family: "Black Jack Script";
 	z-index: 100;
 	
 	&::after {
@@ -116,12 +115,14 @@ html#index .header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-transform: uppercase;
+	font-weight: bold;
 	
 	&__heading {
-		padding: 2rem 10rem;
 		@include border-style-1;
-		background-color: #1a1a1a54;
-		box-shadow: inset 0 0 2rem black;
+		padding: 5rem 10rem;
+		background-color: #efefef20;
+		box-shadow: 0 0 2rem 6px black;
 		text-shadow: var(--shadow);
 	}
 	&::after {
@@ -133,15 +134,12 @@ html#index .header {
 	}
 }
 
-.main {
+.section {
+	width: 100%;
+	margin: 5rem 0;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.section {
-	display: flex;
 	justify-content: center;
 	align-items: center;
 }

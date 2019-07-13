@@ -20,3 +20,8 @@
 	border-top: solid var(--width) #efefef;
 	border-bottom: solid var(--width) #efefef;
 }
+
+@mixin border-style-2 {
+	--width: 3px;
+	border-bottom: solid var(--width) #efefef;
+}
