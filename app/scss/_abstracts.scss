@@ -1,7 +1,22 @@
+:root {
+	--shadow: 
+		0 0 3px black,
+		0 0 6px black,
+		0 0 12px black;
+		
+}
+
 @mixin extendedbg {
 	content: "";
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0);
 	width: 100vw;
+	z-index: -1;
+}
+
+@mixin border-style-1 {
+	--width: 3px;
+	border-top: solid var(--width) #efefef;
+	border-bottom: solid var(--width) #efefef;
 }

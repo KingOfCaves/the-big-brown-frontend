@@ -1,5 +1,16 @@
-.header {
+html#index .header {
 	position: absolute;
+
+	&::after {
+		background: linear-gradient(
+			#101010bc,
+			transparent
+		);
+	}
+}
+
+.header {
+	position: relative;
 	padding: 2rem 0;
 	width: 100%;
 	display: flex;
@@ -7,20 +18,12 @@
 	font-family: "Black Jack Script";
 	z-index: 100;
 
-	text-shadow: 
-		0 0 3px black,
-		0 0 6px black,
-		0 0 12px black;
+	text-shadow: var(--shadow);
 	
 	&::after {
 		@include extendedbg;
 		top: 0;
 		height: 125%;
-		z-index: -1;
-		background: linear-gradient(
-			#101010bc,
-			transparent
-		);
 	}
 
 	& > :first-child{
@@ -32,7 +35,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 4.8rem;
+	font-size: 5.5rem;
 	
 	&__text {
 		display: flex;
@@ -72,13 +75,21 @@
 .navbar {
 	display: flex;
 	text-transform: uppercase;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 	font-family: "Quattrocento", sans-serif;
 
 	&__link {
 		display: block;
-		padding: 1rem 2rem;
+		padding: 2rem;
+		transition: all .1s ease-in;
+
+		&:hover {
+			background-color: #1a1a1a1e;
+			box-shadow: inset 0 0 1rem black;
+			backdrop-filter: none;
+		}
+		
 		&:not(:last-child) {
 			margin-right: 2rem;
 		}
@@ -95,19 +106,42 @@
 	
 	&::after {
 		@include extendedbg;
-		z-index: -1;
 		background-color: #101010;
 	}
 }
 
 .showcase {
 	position: relative;
-	height: 76rem;
+	height: 64rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
+	&__heading {
+		padding: 2rem 10rem;
+		@include border-style-1;
+		background-color: #1a1a1a54;
+		box-shadow: inset 0 0 2rem black;
+		text-shadow: var(--shadow);
+	}
 	&::after {
 		@include extendedbg;
+		top: 0;
 		height: 100%;
 		background: url(../images/steak-flame.jpg) no-repeat center;
 		background-size: cover;
 	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

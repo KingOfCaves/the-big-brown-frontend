@@ -1,0 +1,9 @@
+.heading__secondary {
+	font-size: 5rem;
+	@include border-style-1;
+
+	width: 50%;
+	padding: 2rem 0;
+	margin: 4rem;
+	text-align: center;
+}

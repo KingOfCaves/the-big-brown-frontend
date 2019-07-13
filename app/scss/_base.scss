@@ -7,11 +7,16 @@ html {
     box-sizing: inherit;
 }
 
+*:link, *:visited{
+	color: currentColor;
+	text-decoration: none;
+}
+
 body {
 	font-family: 'Quattrocento', serif;
 	font-size: 4rem;
-	background-color: #101010;
-	color: #efefef;
+	background: #131313;
+	color: #fefefe;
 }
 
 .wrapper {
@@ -19,9 +24,4 @@ body {
 	height: auto;
 	max-width: 128rem;
 	margin: auto;
-}
-
-*:link, *:visited{
-	color: currentColor;
-	text-decoration: none;
 }
