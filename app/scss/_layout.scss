@@ -5,7 +5,7 @@ html#index .header {
 		height: 150%;
 		top: 0;
 		background: linear-gradient(
-			#101010be,
+			#1010105f,
 			transparent
 		);
 	}
@@ -85,7 +85,7 @@ html#index .header {
 		transition: all .1s ease-in;
 
 		&:hover {
-			background-color: #1a1a1a1e;
+			// background-color: #1a1a1a72;
 			box-shadow: inset 0 0 1rem black;
 			backdrop-filter: none;
 		}
@@ -111,7 +111,7 @@ html#index .header {
 
 .showcase {
 	position: relative;
-	height: 64rem;
+	height: 76rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
