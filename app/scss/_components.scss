@@ -15,29 +15,28 @@
 	text-align: center;
 }
 
-icon {
-	&__img {
-		position: relative;
-		padding: 4;
-		border-left: solid 3px #efefef;
-		background-color: #1a1a1a1e;
-		backdrop-filter: blur(3px);
 
-		&::after {
-			content: "";
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			box-shadow: inset 0 0 1rem black;
-		}
+.icon-grouping {
+	display: flex;
+	margin-bottom: 3rem;
+	
+	& > *:not(:last-child) {
+		margin-right: 4rem;
+	}
+}
+.icon {
+	position: relative;
+	padding: 2rem;
+	width: 15rem;
+	height: 15rem;
+	background-color: #fefefe;
+	backdrop-filter: blur(3px);
+	box-shadow: inset 0 0 1rem 3px black;	
 
-		& svg {
-			width: 6rem;
-			height: auto;
-			fill: currentColor;
-			filter: drop-shadow(2px 2px 4px black);
-		}
+	& svg {
+		width: 100%;
+		height: 100%;
+		fill: currentColor;
+		filter: drop-shadow(0 0 4px black);
 	}
 }

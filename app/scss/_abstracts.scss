@@ -25,3 +25,8 @@
 	--width: 3px;
 	border-bottom: solid var(--width) #efefef;
 }
+
+@mixin border-style-3 {
+	--width: 3px;
+	border-top: solid var(--width) #efefef;
+}
