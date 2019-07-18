@@ -1,6 +1,6 @@
-// .wrapper > *:not(:last-child):not(:first-child){
-// 	margin-bottom: 5rem;
-// }
+.wrapper > *:not(:last-child):not(:first-child):not(:nth-last-child(2)) {
+	margin-bottom: 10rem;
+}
 
 html#index .header {
 	position: absolute;
@@ -12,6 +12,7 @@ html#index .header {
 			#1010105f,
 			transparent
 		);
+		box-shadow: none;
 	}
 }
 
@@ -27,6 +28,7 @@ html#index .header {
 	
 	&::after {
 		@include extendedbg;
+		box-shadow: 0 0 1rem black;
 	}
 
 	& > :first-child{
@@ -38,7 +40,7 @@ html#index .header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 5.5rem;
+	font-size: 6.5rem;
 	
 	&__text {
 		display: flex;
@@ -50,25 +52,13 @@ html#index .header {
 		font-size: .5em;
 	}
 	&__img {
-		position: relative;
-		padding: 1.3rem 1.5rem 0rem 2px;
-		border-left: solid 3px #efefef;
-		background-color: #efefef20;
-		backdrop-filter: blur(3px);
-
-		&::after {
-			content: "";
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			box-shadow: 0 0 1rem black;
-		}
+		padding: 1.3rem 1.5rem 0 0;
+		width: 10rem;
+		height: 100%;
 
 		& svg {
-			width: 6rem;
-			height: auto;
+			width: 100%;
+			height: 100%;
 			fill: currentColor;
 			filter: drop-shadow(2px 2px 4px black);
 		}
@@ -84,14 +74,12 @@ html#index .header {
 
 	&__link {
 		display: block;
-		padding: 2rem 4rem;
-		transition: all .2s;
-		background-color: #efefef20;
-		box-shadow: 0 0 1rem black;
+		padding: 2rem;
+		transition: all .1s;
 
 		&:hover {
-			box-shadow: none;
-			background-color: transparent;
+			// box-shadow: none;
+			background-color: #10101072;
 		}
 		
 		&:not(:last-child) {
@@ -110,9 +98,9 @@ html#index .header {
 	
 	&::after {
 		@include extendedbg;
-		@include border-style-1;
 		height: 100%;
 		background-color: #101010;
+		box-shadow: 0 0 1rem black;
 	}
 }
 
@@ -164,13 +152,13 @@ html#index .header {
 		display: flex;
 		height: 50rem;
 		width: 50%;
+		box-shadow: inset 0 0 1rem 4px black;
 
 		&__piece {
 			position: relative;
 			flex: 1;
 			overflow: hidden;
 			height: 100%;
-			box-shadow: inset 0 0 1rem 4px black;
 			transition: flex .3s ease-in-out;
 
 			background-repeat: no-repeat;
@@ -197,4 +185,60 @@ html#index .header {
 
 .delivery {
 	flex-direction: column;
+
+	&__summary {
+		width: 50%;
+		text-align: center;
+	}
+}
+
+.city {
+	position: relative;
+	height: 30rem;
+	margin: 0;
+
+	&__heading {
+		@include border-style-1;
+		padding: 5rem 10rem;
+		background-color: #efefef20;
+		box-shadow: 0 0 2rem 6px black;
+		text-shadow: var(--shadow);
+		text-transform: uppercase;
+	}
+	
+	&::after {
+		@include extendedbg;
+		height: 100%;
+		background-image: url(../images/city-air.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+.menu {
+	--spacing: 5rem;
+	position: relative;
+	padding: var(--spacing) 0;
+	width: 100%;
+	flex-direction: column;
+
+	& > *:not(:last-child) {
+		margin-bottom: var(--spacing);
+	}
+
+	&__item {
+		width: 100%;
+		padding: 3rem;
+		font-size: 6rem;
+		box-shadow: inset 0 0 2rem black;
+		text-shadow: var(--shadow);
+		background-image: url();
+	}
+
+	&::after {
+		@include extendedbg;
+		height: 100%;
+		background-color: #efefef;
+	}
 }
