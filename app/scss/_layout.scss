@@ -25,6 +25,7 @@ html#index .header {
 	align-items: center;
 	font-family: "Black Jack Script";
 	z-index: 100;
+	color: #fefefe;
 	text-shadow: var(--shadow);
 	
 	&::after {
@@ -96,6 +97,7 @@ html#index .header {
 	display: flex;
 	align-items: center;
 	z-index: 100;
+	color: #fefefe;
 	
 	&::after {
 		@include extendedbg;
@@ -152,7 +154,7 @@ html#index .header {
 		display: flex;
 		height: 50rem;
 		width: 50%;
-		box-shadow: inset 0 0 1rem 4px black;
+		box-shadow: 0 0 1rem 5px black;
 
 		&__piece {
 			position: relative;
@@ -175,7 +177,6 @@ html#index .header {
 			&.piece-2 {
 				background-image: url('../images/steak-rosemary.jpg');
 			}
-
 			&.piece-3 {
 				background-image: url('../images/kabob.jpg');
 			}
@@ -184,13 +185,32 @@ html#index .header {
 }
 
 .delivery {
-	&__image {
+	&__doublet {
+		display: flex;
+		flex-direction: column;
+		position: relative;
 		height: 50rem;
 		flex-basis: 50%;
-		background: 
-			url(../images/fast-car.jpg) no-repeat,
-			url(../images/fast-car-2.jpg) no-repeat;
-		background-size: cover;
+		box-shadow: 0 0 1rem 5px black;
+
+		&__piece {
+			flex: 1;
+			transition: flex .3s;
+
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			&.piece-1 {
+				background-image: url(../images/fast-car.jpg);
+			}
+			&.piece-2 {
+				background-image: url(../images/fast-car-2.jpg);
+			}
+			&:hover {
+				flex: 3;
+			}
+		}
 	}
 	&__text {
 		flex-basis: 50%;
@@ -199,7 +219,6 @@ html#index .header {
 		justify-content: center;
 		flex-direction: column;
 	}
-
 	&__summary {
 		width: 100%;
 		text-align: center;
