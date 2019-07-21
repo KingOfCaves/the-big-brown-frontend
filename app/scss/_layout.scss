@@ -187,7 +187,10 @@ html#index .header {
 	&__image {
 		height: 50rem;
 		flex-basis: 50%;
-		background-color: #efefef;
+		background: 
+			url(../images/fast-car.jpg) no-repeat,
+			url(../images/fast-car-2.jpg) no-repeat;
+		background-size: cover;
 	}
 	&__text {
 		flex-basis: 50%;
