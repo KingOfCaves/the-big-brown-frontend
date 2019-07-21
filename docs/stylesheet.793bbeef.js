@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"fonts/Quattrocento/stylesheet.css":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"fonts/Black Jack/stylesheet.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./Quattrocento-Bold.woff2":[["Quattrocento-Bold.4a33c5be.woff2","fonts/Quattrocento/Quattrocento-Bold.woff2"],"fonts/Quattrocento/Quattrocento-Bold.woff2"],"./Quattrocento-Bold.woff":[["Quattrocento-Bold.ee7b7ffe.woff","fonts/Quattrocento/Quattrocento-Bold.woff"],"fonts/Quattrocento/Quattrocento-Bold.woff"],"./Quattrocento.woff2":[["Quattrocento.c177657b.woff2","fonts/Quattrocento/Quattrocento.woff2"],"fonts/Quattrocento/Quattrocento.woff2"],"./Quattrocento.woff":[["Quattrocento.38c097f8.woff","fonts/Quattrocento/Quattrocento.woff"],"fonts/Quattrocento/Quattrocento.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./BlackJackScript.woff2":[["BlackJackScript.6b73fc83.woff2","fonts/Black Jack/BlackJackScript.woff2"],"fonts/Black Jack/BlackJackScript.woff2"],"./BlackJackScript.woff":[["BlackJackScript.c556e8fb.woff","fonts/Black Jack/BlackJackScript.woff"],"fonts/Black Jack/BlackJackScript.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60801" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63277" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

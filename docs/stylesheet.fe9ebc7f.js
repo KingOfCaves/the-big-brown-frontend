@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"fonts/Black Jack/stylesheet.css":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"fonts/Quattrocento Sans/stylesheet.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./BlackJackScript.woff2":[["BlackJackScript.6b73fc83.woff2","fonts/Black Jack/BlackJackScript.woff2"],"fonts/Black Jack/BlackJackScript.woff2"],"./BlackJackScript.woff":[["BlackJackScript.c556e8fb.woff","fonts/Black Jack/BlackJackScript.woff"],"fonts/Black Jack/BlackJackScript.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./QuattrocentoSans-BoldItalic.woff2":[["QuattrocentoSans-BoldItalic.3c89021c.woff2","fonts/Quattrocento Sans/QuattrocentoSans-BoldItalic.woff2"],"fonts/Quattrocento Sans/QuattrocentoSans-BoldItalic.woff2"],"./QuattrocentoSans-BoldItalic.woff":[["QuattrocentoSans-BoldItalic.7bc7f9ca.woff","fonts/Quattrocento Sans/QuattrocentoSans-BoldItalic.woff"],"fonts/Quattrocento Sans/QuattrocentoSans-BoldItalic.woff"],"./QuattrocentoSans.woff2":[["QuattrocentoSans.e6bb2c8e.woff2","fonts/Quattrocento Sans/QuattrocentoSans.woff2"],"fonts/Quattrocento Sans/QuattrocentoSans.woff2"],"./QuattrocentoSans.woff":[["QuattrocentoSans.b7253bd2.woff","fonts/Quattrocento Sans/QuattrocentoSans.woff"],"fonts/Quattrocento Sans/QuattrocentoSans.woff"],"./QuattrocentoSans-Bold.woff2":[["QuattrocentoSans-Bold.aaa59468.woff2","fonts/Quattrocento Sans/QuattrocentoSans-Bold.woff2"],"fonts/Quattrocento Sans/QuattrocentoSans-Bold.woff2"],"./QuattrocentoSans-Bold.woff":[["QuattrocentoSans-Bold.2860c0f9.woff","fonts/Quattrocento Sans/QuattrocentoSans-Bold.woff"],"fonts/Quattrocento Sans/QuattrocentoSans-Bold.woff"],"./QuattrocentoSans-Italic.woff2":[["QuattrocentoSans-Italic.36413c70.woff2","fonts/Quattrocento Sans/QuattrocentoSans-Italic.woff2"],"fonts/Quattrocento Sans/QuattrocentoSans-Italic.woff2"],"./QuattrocentoSans-Italic.woff":[["QuattrocentoSans-Italic.6ec4f463.woff","fonts/Quattrocento Sans/QuattrocentoSans-Italic.woff"],"fonts/Quattrocento Sans/QuattrocentoSans-Italic.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60801" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63277" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
