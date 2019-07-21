@@ -1,4 +1,5 @@
-.wrapper > *:not(:last-child):not(:first-child):not(:nth-last-child(2)) {
+// :not(:nth-last-child(2))
+.wrapper > *:not(:last-child):not(:first-child) {
 	margin-bottom: 10rem;
 }
 
@@ -137,7 +138,6 @@ html#index .header {
 		flex: 1;
 		flex-basis: 50%;
 		height: 100%;
-		margin-right: 5rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -184,10 +184,21 @@ html#index .header {
 }
 
 .delivery {
-	flex-direction: column;
+	&__image {
+		height: 50rem;
+		flex-basis: 50%;
+		background-color: #efefef;
+	}
+	&__text {
+		flex-basis: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
 
 	&__summary {
-		width: 50%;
+		width: 100%;
 		text-align: center;
 	}
 }

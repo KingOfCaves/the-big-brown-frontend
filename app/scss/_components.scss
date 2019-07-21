@@ -3,6 +3,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
+	& > :first-child {
+		margin-right: 5rem;
+	}
 }
 
 .heading-secondary {
@@ -20,12 +24,12 @@
 	margin-bottom: 3rem;
 	
 	& > *:not(:last-child) {
-		margin-right: 8rem;
+		margin-right: 5rem;
 	}
 }
 .icon {
 	position: relative;
-	height: 15rem;
+	height: 10rem;
 
 	& svg {
 		width: auto;
