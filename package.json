@@ -30,7 +30,7 @@
 	],
 	"scripts": {
 		"clean": "rimraf ./dist/*",
-		"package": "parcel ./app/index.html --open --no-source-maps --out-dir ./docs",
+		"package": "parcel ./app/index.html --open --no-source-maps --out-dir ./docs --public-url /the-big-brown-frontend/",
 		"post": "npm-run-all clean package"
 	},
 	"keywords": [],
