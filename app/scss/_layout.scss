@@ -232,6 +232,7 @@ html#index .header {
 		box-shadow: 0 0 2rem 6px black;
 		text-shadow: var(--shadow);
 		text-transform: uppercase;
+		font-weight: bold;
 	}
 	
 	&::after {
@@ -302,8 +303,8 @@ html#index .header {
 		padding: 2rem;
 		text-align: center;
 	}
-	&:hover &__details {
-	}
-	&.active &__details {
-	}
+	// &:hover &__details {
+	// }
+	// &.active &__details {
+	// }
 }
