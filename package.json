@@ -28,8 +28,10 @@
 	"browserslist": [
 		"defaults"
 	],
+	"imagemin": {
+	},
 	"scripts": {
-		"clean": "rimraf ./dist/*",
+		"clean": "rimraf ./docs/*",
 		"package": "parcel ./app/index.html --open --no-source-maps --out-dir ./docs --public-url /the-big-brown-frontend/",
 		"post": "npm-run-all clean package"
 	},

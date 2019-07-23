@@ -1,12 +1,12 @@
+html#index .section {
+	margin-bottom: 10rem;
+}
+
 .section {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
-	& > :first-child {
-		margin-right: 5rem;
-	}
 }
 
 .heading-secondary {

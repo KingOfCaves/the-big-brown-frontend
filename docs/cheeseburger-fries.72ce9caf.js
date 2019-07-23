@@ -117,8 +117,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"images/kabob.jpg":[function(require,module,exports) {
-module.exports = "/the-big-brown-frontend/kabob.ec2fbe72.jpg";
+})({"images/cheeseburger-fries.jpg":[function(require,module,exports) {
+module.exports = "/the-big-brown-frontend/cheeseburger-fries.72ce9caf.jpg";
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

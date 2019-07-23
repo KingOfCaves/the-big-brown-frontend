@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\steak-flame.jpg":[["steak-flame.08b0a7c2.jpg","images/steak-flame.jpg"],"steak-flame.08b0a7c2.js","images/steak-flame.jpg"],"./..\\images\\burg.jpg":[["burg.5cf1437d.jpg","images/burg.jpg"],"burg.5cf1437d.js","images/burg.jpg"],"./..\\images\\steak-rosemary.jpg":[["steak-rosemary.8dea0278.jpg","images/steak-rosemary.jpg"],"steak-rosemary.8dea0278.js","images/steak-rosemary.jpg"],"./..\\images\\kabob.jpg":[["kabob.ec2fbe72.jpg","images/kabob.jpg"],"kabob.ec2fbe72.js","images/kabob.jpg"],"./..\\images\\fast-car.jpg":[["fast-car.0e5eb2c4.jpg","images/fast-car.jpg"],"fast-car.0e5eb2c4.js","images/fast-car.jpg"],"./..\\images\\fast-car-2.jpg":[["fast-car-2.82f8dd61.jpg","images/fast-car-2.jpg"],"fast-car-2.82f8dd61.js","images/fast-car-2.jpg"],"./..\\images\\city-air.jpg":[["city-air.b1fc09de.jpg","images/city-air.jpg"],"city-air.b1fc09de.js","images/city-air.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\steak-flame.jpg":[["steak-flame.08b0a7c2.jpg","images/steak-flame.jpg"],"steak-flame.08b0a7c2.js","images/steak-flame.jpg"],"./..\\images\\burg.jpg":[["burg.5cf1437d.jpg","images/burg.jpg"],"burg.5cf1437d.js","images/burg.jpg"],"./..\\images\\steak-rosemary.jpg":[["steak-rosemary.8dea0278.jpg","images/steak-rosemary.jpg"],"steak-rosemary.8dea0278.js","images/steak-rosemary.jpg"],"./..\\images\\kabob.jpg":[["kabob.ec2fbe72.jpg","images/kabob.jpg"],"kabob.ec2fbe72.js","images/kabob.jpg"],"./..\\images\\fast-car.jpg":[["fast-car.0e5eb2c4.jpg","images/fast-car.jpg"],"fast-car.0e5eb2c4.js","images/fast-car.jpg"],"./..\\images\\fast-car-2.jpg":[["fast-car-2.82f8dd61.jpg","images/fast-car-2.jpg"],"fast-car-2.82f8dd61.js","images/fast-car-2.jpg"],"./..\\images\\city-air.jpg":[["city-air.b1fc09de.jpg","images/city-air.jpg"],"city-air.b1fc09de.js","images/city-air.jpg"],"./..\\images\\cheeseburger-fries.jpg":[["cheeseburger-fries.72ce9caf.jpg","images/cheeseburger-fries.jpg"],"cheeseburger-fries.72ce9caf.js","images/cheeseburger-fries.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64450" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60961" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
