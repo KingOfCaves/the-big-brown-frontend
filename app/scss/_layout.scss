@@ -278,8 +278,7 @@ html#index .header {
 	overflow: hidden;
 
 	&.active {
-		height: calc(50rem + var(--spacing));
-		padding: 4rem;
+		height: calc(48rem + var(--spacing));
 	}
 
 	&__title {

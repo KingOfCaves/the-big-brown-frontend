@@ -163,9 +163,7 @@ module.exports = {
 },{"./data":"scripts/data.js"}],"scripts/index.js":[function(require,module,exports) {
 "use strict";
 
-var _menu = _interopRequireDefault(require("./menu"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+require("./menu");
 },{"./menu":"scripts/menu.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

@@ -1,1 +1,1 @@
-import menu from './menu';
+import './menu';
