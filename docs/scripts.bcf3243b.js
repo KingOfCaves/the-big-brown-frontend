@@ -117,9 +117,56 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"scripts/index.js":[function(require,module,exports) {
-console.log("Hello!");
-},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"scripts/data.js":[function(require,module,exports) {
+var menuData = {};
+module.exports = menuData;
+},{}],"scripts/menu.js":[function(require,module,exports) {
+"use strict";
+
+var _data = _interopRequireDefault(require("./data"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var menuItems = Array.from(document.querySelectorAll('.menu__item'));
+
+function deactivate(put) {
+  put.classList.remove('active');
+}
+
+function activate() {
+  if (!this.classList.contains('active')) {
+    menuItems.forEach(function (item) {
+      return deactivate(item);
+    });
+    this.classList.add('active');
+  } else {
+    deactivate(this);
+  }
+}
+
+function menuScroll() {
+  if (event.propertyName === 'height' && this.classList.contains('active')) {
+    this.scrollIntoView({
+      block: 'center',
+      behavior: 'smooth'
+    });
+  }
+}
+
+menuItems.forEach(function (item) {
+  item.addEventListener('click', activate);
+  item.addEventListener('transitionend', menuScroll);
+});
+module.exports = {
+  menuItems: menuItems
+};
+},{"./data":"scripts/data.js"}],"scripts/index.js":[function(require,module,exports) {
+"use strict";
+
+var _menu = _interopRequireDefault(require("./menu"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./menu":"scripts/menu.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -147,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60961" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57676" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
