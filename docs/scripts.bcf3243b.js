@@ -160,11 +160,28 @@ menuItems.forEach(function (item) {
 module.exports = {
   menuItems: menuItems
 };
-},{"./data":"scripts/data.js"}],"scripts/index.js":[function(require,module,exports) {
+},{"./data":"scripts/data.js"}],"scripts/mini.js":[function(require,module,exports) {
+var navmini = document.querySelector('.navbar__mini');
+var navexit = document.querySelector('.navbar__exit');
+var navbar = document.querySelector('.navbar');
+
+function openMini() {
+  navbar.classList.add('open');
+}
+
+function closeMini() {
+  navbar.classList.remove('open');
+}
+
+navmini.addEventListener('click', openMini);
+navexit.addEventListener('click', closeMini);
+},{}],"scripts/index.js":[function(require,module,exports) {
 "use strict";
 
 require("./menu");
-},{"./menu":"scripts/menu.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("./mini");
+},{"./menu":"scripts/menu.js","./mini":"scripts/mini.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -192,7 +209,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63932" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52331" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

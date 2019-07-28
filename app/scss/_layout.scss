@@ -62,12 +62,28 @@ html#index .header {
 }
 
 .navbar {
+	position: relative;
 	display: flex;
 	text-transform: uppercase;
 	font-size: 3rem;
 	font-weight: bold;
 	font-family: "Quattrocento", sans-serif;
 
+	&__mini {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+		width: auto;
+		height: auto;
+		display: none;
+		font-size: 7rem;
+	}
+
+	&__exit {
+		display: none;
+	}
+	
 	&__link {
 		display: block;
 		padding: 2rem;
@@ -76,10 +92,6 @@ html#index .header {
 		&:hover {
 			// box-shadow: none;
 			background-color: #10101072;
-		}
-		
-		&:not(:last-child) {
-			margin-right: 3rem;
 		}
 	}
 }
@@ -185,7 +197,7 @@ html#index .header {
 		&__piece {
 			flex: 1;
 			transition: flex .3s;
-
+			height: 100%;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -207,8 +219,6 @@ html#index .header {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-	}
-	&__summary {
 		width: 100%;
 		text-align: center;
 	}
