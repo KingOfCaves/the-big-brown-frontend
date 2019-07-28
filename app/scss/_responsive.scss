@@ -286,5 +286,53 @@
 }
 
 @media screen and (max-width: 800px) {
+	body {
+		font-size: 2rem;
+	}
 
+	.heading-secondary {
+		font-size: 2.4rem;
+	}
+	
+	.brand {
+		font-size: 3.2rem;
+	}
+
+	.showcase {
+		height: 40rem;
+
+		&__heading {
+			font-size: 3.2rem;
+		}
+	}
+
+	.navbar {
+		&__mini {
+			font-size: 5rem;
+		}
+	}
+	
+	.mission {
+		&__summary {
+			width: 100%;
+		}
+	}
+
+	.delivery {
+		&__summary {
+			width: 100%;
+		}
+	}
+
+	.city {
+		&__heading {
+			padding: 2rem 10rem;
+		}
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.city {
+		&__heading {}
+	}
 }
