@@ -125,8 +125,6 @@ html#index .header {
 }
 
 .mission {
-	@include spaced-out;
-
 	&__text {
 		flex: 1;
 		flex-basis: 50%;
@@ -176,8 +174,6 @@ html#index .header {
 }
 
 .delivery {
-	@include spaced-out;
-
 	&__doublet {
 		display: flex;
 		flex-direction: column;
@@ -220,7 +216,9 @@ html#index .header {
 
 .city {
 	position: relative;
-	height: 30rem;
+	width: 100%;
+	height: auto;
+	padding: 10rem 0;
 
 	&__heading {
 		@include border-style-1;

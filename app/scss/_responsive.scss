@@ -4,7 +4,7 @@
 	}
 }
 
-@media screen and (max-width: 1600px) and (max-height: 1000px) {
+@media screen and (max-width: 1600px) {
 	body {
 		font-size: 2.8rem;
 	}
@@ -18,16 +18,10 @@
 		font-size: 3.6rem;
 	}
 
-	.showcase {
-		height: 56rem;
-
-		&__heading {
-			font-size: 3.2rem;
-		}
+	.navbar {
+		font-size: 2.6rem;
 	}
-}
 
-@media screen and (max-width: 1400px) {
 	.brand {
 		font-size: 5.6rem;
 
@@ -36,11 +30,187 @@
 		}
 	}
 
-	.navbar {
-		font-size: 2.6rem;
+	.showcase {
+		height: 64rem;
+
+		&__heading {
+			font-size: 3.2rem;
+		}
+	}
+
+	.mission {
+		&__triplet {
+			height: 42rem;
+		}
+	}
+
+	.delivery {
+		&__doublet {
+			height: 42rem;
+		}
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
+	.heading-secondary {
+		font-size: 3.2rem;
+		padding: 2rem 0;
+	}
+
+	.icon {
+		height: 8rem;
+	}
+
+	.brand {
+		font-size: 5rem;
+		&__img {
+			width: 5.6rem;
+		}
+	}
+	
+	.showcase {
+		height: 56rem;
+	}
+
+	.city {
+		padding: 10rem 0;
+		&__heading {
+			text-align: center;
+			width: 100%;
+			padding: 5rem;
+		}
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	html#index .header {
+		position: relative;
+
+		&::after {
+			display: none;
+		}
+	}
+	html#index .section {
+		margin-bottom: 5rem;
+	}
+
+	.heading-secondary {
+		font-weight: bold;
+	}
+
+	.brand {
+		&__text {
+			flex-direction: row;
+		}
+		&__year {
+			display: none;
+		}
+		&__img {
+			display: none;
+		}
+	}
+
+	.navbar {
+		&__link {
+			padding: 2rem 0;
+
+			&:hover {
+				background-color: transparent;
+				text-shadow: 0 0 1rem currentColor;
+			}
+		}
+	}
+
+	.showcase {
+		height: 50rem;
+		
+		&__heading {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100vw;
+			transform: translate(-50%, -50%);
+			padding: 5rem;
+			text-align: center;
+			font-size: 3.6rem;
+		}
+	}
+	
+	.city {
+		&__heading {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100vw;
+			transform: translate(-50%, -50%);
+			padding: 4rem 0;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.mission, .delivery {
+		& > :first-child {
+			margin-right: 5rem;
+		}
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	body {
+		font-size: 2rem;
+	}
+
+	.section {
+		flex-direction: column;
+	}
+
+	.wrapper {
+		margin: 0 5rem;
+	}
+
+	.heading-secondary {
+		font-size: 2.4rem;
+		padding: 4rem 0;
+	}
+
+	.mission {
+		&__summary {
+			width: 75%;
+		}
+		&__triplet {
+			width: 100%;
+			height: 24rem;
+
+			&__piece {
+				&:hover {
+					flex: 1;
+				}
+			}
+		}
+	}
+
+	.delivery {
+		&__doublet {
+			width: 100%;
+			height: 36rem;
+			flex-direction: row;
+
+			&__piece {
+				&:hover {
+					flex: 1;
+				}
+			}
+		}
+	}
+	
+	.mission, .delivery {
+		& > :first-child {
+			margin-bottom: 5rem;
+		}
+	}
+	
 
 }
+

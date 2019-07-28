@@ -30,9 +30,3 @@
 	--width: 3px;
 	border-top: solid var(--width) #efefef;
 }
-
-@mixin spaced-out {
-	& > :first-child {
-		margin-right: 5rem;
-	}
-}
