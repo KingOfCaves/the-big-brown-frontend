@@ -102,7 +102,6 @@ html#index .header {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	z-index: 100;
 	color: #fefefe;
 	
 	&::after {
@@ -269,43 +268,35 @@ html#index .header {
 }
 
 .menu__item {
-	--spacing: 8rem;
-	--title-size: 8rem;
-
 	position: relative;
 	width: 100%;
-	height: calc(var(--spacing) + var(--title-size));
+	height: auto;
 	box-shadow: inset 0 0 1rem black;
 	background-image: url(../images/cheeseburger-fries.jpg);
 	background-size: cover;
 	background-position: center;
 	transition: all .2s;
-	overflow: hidden;
+	padding: 3rem;
 
 	&.active {
-		height: calc(48rem + var(--spacing));
+		height: auto;
 	}
 
+	&.active &__details {
+		display: block;
+	}
+	
 	&__title {
-		position: absolute;
-		top: calc(var(--spacing) / 2);
-		left: 50%;
-		transform: translate(-50%, 0);
-		font-size: var(--title-size);
+		font-size: 3em;
 		font-weight: bold;
 		text-align: center;
 		text-shadow: var(--shadow);
 	}
 	&__details {
-		position: absolute;
-		top: calc(var(--spacing) + var(--title-size));
-		left: 50%;
-		transform: translate(-50%, 0);
-		width: 65%;
-		height: auto;
-		background-color: #101010;
-		padding: 2rem;
+		display: none;
 		text-align: center;
+		background-color: #101010;
+		padding: 3rem;
 	}
 	// &:hover &__details {
 	// }
