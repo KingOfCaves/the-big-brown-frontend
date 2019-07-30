@@ -21,7 +21,3 @@ function activate() {
 menuItems.forEach((item) => {
 	item.addEventListener('click', activate);
 })
-
-module.exports = {
-	menuItems
-}
