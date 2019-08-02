@@ -310,6 +310,14 @@
 	}
 }
 
+@media screen and (min-width: 800px) {
+	.stave {
+		& > :first-child:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.heading-secondary {
 		font-size: 2.4rem;
@@ -352,6 +360,15 @@
 			padding: 2rem 10rem;
 		}
 	}
+
+	.stave {
+		flex-direction: column;
+
+		&__img {
+			width: 75%;
+			margin-bottom: 1rem;
+		}
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -372,9 +389,7 @@
 		&__img {
 			height: 40rem;
 			padding: 1rem;
-			box-shadow: none;
 			font-size: 3rem;
-
 		}
 	}
 }
@@ -397,6 +412,12 @@
 	.city {
 		&__heading {
 			padding: 2rem;
+		}
+	}
+
+	.stave {
+		&__img {
+			width: 100%;
 		}
 	}
 }

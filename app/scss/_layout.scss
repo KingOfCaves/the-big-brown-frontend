@@ -264,7 +264,7 @@ html#index .header {
 	&::after {
 		@include extendedbg;
 		height: 100%;
-		background-color: #efefef;
+		background-color: #fefefe;
 	}
 }
 
@@ -320,8 +320,8 @@ html#index .header {
 		padding: 3rem;
 		flex: 1;
 		flex-basis: 50%;
-		background-color: white;
-		box-shadow: inset 0 0 2rem black;
+		background-color: #fefefe;
+		box-shadow: inset 0 0 1rem black;
 		font-size: 4rem;
 		text-transform: uppercase;
 		text-shadow: var(--shadow);
@@ -337,7 +337,6 @@ html#index .header {
 			width: 100%;
 			height: 100%;
 			z-index: 1;
-			box-shadow: 0 0 1rem black;
 			background-image: url(../images/chef-wallace.jpg);
 			background-position: center;
 			background-size: cover;
@@ -378,17 +377,14 @@ html#index .header {
 	text-align: center;
 	font-weight: 900;
 
-	&> :first-child:not(:last-child) {
-		margin-right: 2rem;
-	}
-
 	&__img {
-		flex: 1;
-		flex-basis: 50%;
-		height: 20rem;
+		width: 50%;
+		height: 30rem;
 		background-image: url(../images/cheeseburger-fries.jpg);
 		background-size: cover;
 		background-position: center;
+		border: 2rem solid #fefefe;
+		box-shadow: inset 0 0 1rem black;
 	}
 	&__name {
 		font-size: 5rem;
