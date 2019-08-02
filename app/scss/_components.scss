@@ -1,16 +1,17 @@
-html#index .section {
-	margin-bottom: 10rem;
-}
-
 .section {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	&:not(:last-child) {
+		margin-bottom: 10rem;
+	}
 }
 
 .heading-secondary {
 	@include border-style-1;
+	width: 100%;
 	margin-bottom: 4rem;
 	padding: 2rem 4rem;
 	font-family: 'Quattrocento';

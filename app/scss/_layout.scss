@@ -253,6 +253,7 @@ html#index .header {
 	--spacing: 10rem;
 	position: relative;
 	padding: var(--spacing) 0;
+	margin: 0 !important;
 	width: 100%;
 	flex-direction: column;
 
@@ -298,8 +299,109 @@ html#index .header {
 		background-color: #101010;
 		padding: 3rem;
 	}
-	// &:hover &__details {
-	// }
-	// &.active &__details {
-	// }
+}
+
+.founder {
+	&__text {
+		flex: 1;
+		flex-basis: 50%;
+		text-align: center;
+	}
+	&__caption {
+		color: #101010;
+	}
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 50rem;
+		width: 100%;
+		padding: 3rem;
+		flex: 1;
+		flex-basis: 50%;
+		background-color: white;
+		box-shadow: inset 0 0 2rem black;
+		font-size: 4rem;
+		text-transform: uppercase;
+		text-shadow: var(--shadow);
+		font-weight: 900;
+
+		&::after {
+			content: attr(data-desc);
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			text-align: center;
+			padding: 1rem;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			box-shadow: 0 0 1rem black;
+			background-image: url(../images/chef-wallace.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	&__msg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__date {
+		display: block;
+		font-size: .75em;
+		font-style: oblique;
+		padding: 4rem;
+	}
+}
+
+.staff {
+	flex-direction: column;
+	&__group {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 4rem;
+		grid-row-gap: 4rem;
+		width: 100%;
+	}
+}
+
+.stave {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: 900;
+
+	&> :first-child:not(:last-child) {
+		margin-right: 2rem;
+	}
+
+	&__img {
+		flex: 1;
+		flex-basis: 50%;
+		height: 20rem;
+		background-image: url(../images/cheeseburger-fries.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	&__name {
+		font-size: 5rem;
+	}
+	&__title {
+		font-size: 3rem;
+	}
+	&__text {
+		flex: 1;
+		flex-basis: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
