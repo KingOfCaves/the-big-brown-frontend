@@ -256,6 +256,7 @@ html#index .header {
 	margin: 0 !important;
 	width: 100%;
 	flex-direction: column;
+	flex: 1;
 
 	& > *:not(:last-child) {
 		margin-bottom: var(--spacing);

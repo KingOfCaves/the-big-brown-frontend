@@ -23,8 +23,10 @@ body {
 }
 
 .wrapper {
+	display: flex;
+	flex-direction: column;
 	position: relative;
-	height: auto;
+	min-height: 100vh;
 	max-width: 140rem;
 	margin: auto;
 }
