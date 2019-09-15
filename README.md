@@ -1,7 +1,7 @@
 # the-big-brown-frontend
  Frontend for a restaurant's website. This is just the design / interactivity / idea.
 
-## GETTTING STARTED
+## GETTING STARTED
 
 This is a design / frontend component to a website as a personal project. It can be used in any way you like, you can even completely change the theme or design yourself. You can even add a backend to it if you want to.
 
