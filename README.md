@@ -12,7 +12,8 @@ The project uses parcel to generate the static assets for the website. The sourc
 ## SCREENSHOTS
 
 ![picture of index page](./content/the-big-brown-1.jpg)
-![picture of about page](./content/the-big-brown-2.jpg)
+![picture of menu page](./content/the-big-brown-2.jpg)
+![picture of about page](./content/the-big-brown-3.jpg)
 
 ## CREDITS
 
