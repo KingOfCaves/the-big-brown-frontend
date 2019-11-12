@@ -117,62 +117,74 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"scripts/data.js":[function(require,module,exports) {
-var menuData = {};
-module.exports = menuData;
-},{}],"scripts/menu.js":[function(require,module,exports) {
-"use strict";
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-var _data = _interopRequireDefault(require("./data"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var menuItems = Array.from(document.querySelectorAll('.menu__item'));
-
-function deactivate(put) {
-  put.classList.remove('active');
-}
-
-function activate() {
-  if (!this.classList.contains('active')) {
-    menuItems.forEach(function (item) {
-      return deactivate(item);
-    });
-    this.classList.add('active');
-    this.scrollIntoView({
-      block: 'center',
-      behavior: 'smooth'
-    });
-  } else {
-    deactivate(this);
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
   }
+
+  return bundleURL;
 }
 
-menuItems.forEach(function (item) {
-  item.addEventListener('click', activate);
-});
-},{"./data":"scripts/data.js"}],"scripts/mini.js":[function(require,module,exports) {
-var navmini = document.querySelector('.navbar__mini');
-var navexit = document.querySelector('.navbar__exit');
-var navbar = document.querySelector('.navbar');
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
 
-function openMini() {
-  navbar.classList.add('open');
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
 }
 
-function closeMini() {
-  navbar.classList.remove('open');
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
 }
 
-navmini.addEventListener('click', openMini);
-navexit.addEventListener('click', closeMini);
-},{}],"scripts/index.js":[function(require,module,exports) {
-"use strict";
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
 
-require("./menu");
+function updateLink(link) {
+  var newLink = link.cloneNode();
 
-require("./mini");
-},{"./menu":"scripts/menu.js","./mini":"scripts/mini.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -375,4 +387,4 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts/index.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
