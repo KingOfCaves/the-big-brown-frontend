@@ -82,13 +82,17 @@ html#index .header {
 	}
 
 	&__link {
+		position: relative;
 		display: block;
 		padding: 2rem;
-		transition: all 0.1s;
+		transition: all 0.2s;
+		text-decoration: underline;
+		text-decoration-color: transparent;
 
 		&:hover {
 			// box-shadow: none;
 			background-color: #10101072;
+			text-decoration-color: currentColor;
 		}
 	}
 }
@@ -291,6 +295,11 @@ html#index .header {
 		text-align: center;
 		text-shadow: var(--shadow);
 	}
+
+	&:hover {
+		padding: 5rem 3rem;
+	}
+
 	&__details {
 		display: none;
 		text-align: center;
