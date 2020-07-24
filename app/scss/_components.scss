@@ -20,11 +20,10 @@
 	text-align: center;
 }
 
-
 .icon-grouping {
 	display: flex;
 	margin-bottom: 3rem;
-	
+
 	& > *:not(:last-child) {
 		margin-right: 5rem;
 	}

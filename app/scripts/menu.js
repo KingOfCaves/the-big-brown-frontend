@@ -7,11 +7,11 @@ function deactivate(put) {
 
 function activate() {
 	if (!this.classList.contains('active')) {
-		menuItems.forEach((item) => deactivate(item));		
+		menuItems.forEach((item) => deactivate(item));
 		this.classList.add('active');
 		this.scrollIntoView({
 			block: 'center',
-			behavior: 'smooth'
+			behavior: 'smooth',
 		});
 	} else {
 		deactivate(this);
@@ -20,4 +20,4 @@ function activate() {
 
 menuItems.forEach((item) => {
 	item.addEventListener('click', activate);
-})
+});

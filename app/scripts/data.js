@@ -1,5 +1,3 @@
-const menuData = {
-
-}
+const menuData = {};
 
 module.exports = menuData;

@@ -1,13 +1,16 @@
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+	font-size: 62.5%;
+	box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
-*:link, *:visited{
+*:link,
+*:visited {
 	color: currentColor;
 	text-decoration: none;
 }
